@@ -1,0 +1,1501 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     65119,       1493]
+NotebookOptionsPosition[     64267,       1470]
+NotebookOutlinePosition[     64701,       1487]
+CellTagsIndexPosition[     64658,       1484]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Content", "-", 
+    RowBox[{"type", ":", 
+     RowBox[{"application", "/", 
+      RowBox[{"vnd", ".", "wolfram", ".", "mathematica"}]}]}]}], "*)"}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"**", "Wolfram"}], " ", "Notebook", " ", "File"}], "***)"}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"http", ":"}], "//", 
+    RowBox[{
+     RowBox[{"www", ".", "wolfram", ".", "com"}], "/", "nb"}]}], "*)"}], 
+  RowBox[{"(*", 
+   RowBox[{"CreatedBy", "=", 
+    RowBox[{"'", "Mathematica", " ", 
+     RowBox[{"13.0", "'"}]}]}], "*)"}], 
+  RowBox[{"(*", 
+   RowBox[{"CacheID", ":", "234"}], "*)"}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"Internal", " ", "cache", " ", 
+     RowBox[{"information", ":", 
+      RowBox[{
+      "NotebookFileLineBreakTest", " ", "NotebookFileLineBreakTest", " ", 
+       RowBox[{"NotebookDataPosition", "[", 
+        RowBox[{"158", ",", "7"}], "]"}], " ", 
+       RowBox[{"NotebookDataLength", "[", 
+        RowBox[{"8541", ",", "220"}], "]"}], " ", 
+       RowBox[{"NotebookOptionsPosition", "[", 
+        RowBox[{"7788", ",", "197"}], "]"}], " ", 
+       RowBox[{"NotebookOutlinePosition", "[", 
+        RowBox[{"8239", ",", "215"}], "]"}], " ", 
+       RowBox[{"CellTagsIndexPosition", "[", 
+        RowBox[{"8196", ",", "212"}], "]"}], " ", "WindowFrame"}]}]}], "->", 
+    "Normal"}], "*)"}], 
+  RowBox[{"(*", 
+   RowBox[{"Beginning", " ", "of", " ", "Notebook", " ", "Content"}], "*)"}], 
+  RowBox[{
+   RowBox[{"Notebook", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Cell", "[", 
+       RowBox[{"CellGroupData", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Cell", "[", 
+            RowBox[{"\"\<Lab 4\>\"", ",", "\"\<Title\>\"", ",", 
+             RowBox[{"CellChangeTimes", "->", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{"3.859966401820181*^9", ",", "3.85996640353069*^9"}],
+                  "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "3.859966444433812*^9", ",", "3.859966447378789*^9"}], "}"}],
+                 ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "3.8852673621916533`*^9", ",", "3.8852673622871227`*^9"}], 
+                 "}"}]}], "}"}]}], ",", 
+             RowBox[{
+             "ExpressionUUID", "->", 
+              "\"\<95d85031-3470-4dfe-a01d-5d91ecfd3695\>\""}]}], "]"}], ",", 
+           RowBox[{"Cell", "[", 
+            RowBox[{
+             RowBox[{"TextData", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"StyleBox", "[", 
+                 RowBox[{"\"\<Dates\\n\>\"", ",", 
+                  RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], ",", 
+                "\"\<4 Apr 2023 \[RightArrow] 18 Apr 2023\>\"", ",", 
+                RowBox[{"StyleBox", "[", 
+                 RowBox[{"\"\<\\nRules\>\"", ",", 
+                  RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], ",", 
+                "\"\<\\n1. The following tasks contain a description of \
+objects that you need to implement.\\n2. It is strongly recommended to use \
+Wolfram Mathematica to complete the lab, even if your team is more familiar \
+with another system. The reason for this recommendation is that the tasks are \
+made to be \>\"", ",", 
+                RowBox[{"StyleBox", "[", 
+                 RowBox[{"\"\<easy \>\"", ",", 
+                  RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], ",", 
+                "\"\<to complete \>\"", ",", 
+                RowBox[{"StyleBox", "[", 
+                 RowBox[{"\"\<using WM\>\"", ",", 
+                  RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], ",", 
+                "\"\< and to show how WM can be used to \>\"", ",", 
+                RowBox[{"StyleBox", "[", 
+                 RowBox[{"\"\<visualize\>\"", ",", 
+                  RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], ",", 
+                
+                "\"\< concepts you learn in the Complex Analysis course. You \
+are still free to use other software systems to complete the lab, provided \
+your implementation meets all the conditions described in the tasks below. \
+Any details which are not covered in the task text are up to you.\\n3. To ask \
+questions about the lab and to send \>\"", ",", 
+                RowBox[{"StyleBox", "[", 
+                 RowBox[{"\"\<the link to your solutions\>\"", ",", 
+                  RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], ",", 
+                "\"\<, use\>\"", ",", 
+                RowBox[{"ButtonBox", "[", 
+                 RowBox[{"\"\< the Lab4 \\\"problem\\\" on nsuhw.ru\>\"", ",", 
+                  RowBox[{"BaseStyle", "->", "\"\<Hyperlink\>\""}], ",", 
+                  RowBox[{"ButtonData", "->", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    "URL", "[", "\"\<https://nsuhw.ru/ca/task/3983/\>\"", 
+                    "]"}], ",", "None"}], "}"}]}], ",", 
+                  RowBox[{
+                  "ButtonNote", "->", 
+                   "\"\<https://nsuhw.ru/ca/task/3983/\>\""}]}], "]"}], ",", 
+                "\"\<. Please, keep in mind that you won\[CloseCurlyQuote]t \
+be allowed to send a message after the last deadline \>\"", ",", 
+                RowBox[{"StyleBox", "[", 
+                 RowBox[{"\"\<30 Apr 2023\>\"", ",", 
+                  RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], ",", 
+                "\"\<.\>\""}], "}"}], "]"}], ",", "\"\<Abstract\>\"", ",", 
+             RowBox[{"CellChangeTimes", "->", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{
+                 "3.859966677666006*^9", ",", "3.859966678167807*^9"}], "}"}],
+                 ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "3.859966709998013*^9", ",", "3.8599667178780813`*^9"}], 
+                 "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "3.8599705181552134`*^9", ",", "3.859970526592711*^9"}], 
+                 "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "3.8599790160489073`*^9", ",", "3.85997901669663*^9"}], 
+                 "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"3.8600423833639*^9", ",", "3.860042384318589*^9"}], 
+                 "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "3.885266619834732*^9", ",", "3.8852666578465014`*^9"}], 
+                 "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "3.885267618835787*^9", ",", "3.885267624588007*^9"}], "}"}],
+                 ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "3.889562827775284*^9", ",", "3.8895628505491533`*^9"}], 
+                 "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "3.889564005045671*^9", ",", "3.889564047360155*^9"}], 
+                 "}"}]}], "}"}]}], ",", 
+             RowBox[{
+             "ExpressionUUID", "->", 
+              "\"\<616b0eb7-30ae-442f-9ffe-c2d722e5620d\>\""}]}], "]"}], ",", 
+           RowBox[{"Cell", "[", 
+            RowBox[{"CellGroupData", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Cell", "[", 
+                 RowBox[{
+                 "\"\<Combination of Lab2 and Lab3\>\"", ",", 
+                  "\"\<Chapter\>\"", ",", 
+                  RowBox[{"CellChangeTimes", "->", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.859981327665786*^9", ",", "3.859981364921829*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.8599816189504747`*^9", ",", "3.859981621811307*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.859982610791754*^9", ",", "3.8599826124725122`*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.885267382306584*^9", ",", "3.88526738895333*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.885267552648775*^9", ",", "3.885267580827383*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.8895628948831367`*^9", ",", "3.889562910532583*^9"}], 
+                    "}"}]}], "}"}]}], ",", 
+                  RowBox[{
+                  "ExpressionUUID", "->", 
+                   "\"\<e8693646-eb24-4220-ade7-e18f24be094f\>\""}]}], "]"}], 
+                ",", 
+                RowBox[{"Cell", "[", 
+                 RowBox[{
+                  RowBox[{"TextData", "[", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "\"\<In this lab, you will create a complex plane that \
+includes all the points of segments \>\"", ",", 
+                    RowBox[{"Cell", "[", 
+                    RowBox[{
+                    RowBox[{"BoxData", "[", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"<|", 
+                    RowBox[{
+                    RowBox[{"\"\<boxes\>\"", "->", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\"\<[\>\"", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<z\>\"", ",", "\"\<TI\>\""}], "]"}], ",", 
+                    "\"\<,\>\"", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<f\>\"", ",", "\"\<TI\>\""}], "]"}], ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\"\<(\>\"", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<z\>\"", ",", "\"\<TI\>\""}], "]"}], ",", 
+                    "\"\<)\>\""}], "}"}], "]"}]}], "}"}], "]"}], ",", 
+                    "\"\<]\>\""}], "}"}], "]"}], ",", "TraditionalForm"}], 
+                    "]"}]}], ",", 
+                    RowBox[{"\"\<errors\>\"", "->", 
+                    RowBox[{"{", "}"}]}], ",", 
+                    RowBox[{"\"\<input\>\"", "->", "\"\<[z,f(z)]\>\""}], ",", 
+                    RowBox[{"\"\<state\>\"", "->", "\"\<Boxes\>\""}]}], 
+                    "|>"}], ",", "\"\<TeXAssistantTemplate\>\""}], "]"}], ",",
+                     "TraditionalForm"}], "]"}], "]"}], ",", 
+                    RowBox[{
+                    "ExpressionUUID", "->", 
+                    "\"\<c487d3e8-95fe-4995-9fb3-c950d2923ebc\>\""}]}], "]"}],
+                     ",", "\"\<, where z runs through all lines from \>\"", 
+                    ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<Task 3\>\"", ",", 
+                    RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], 
+                    ",", "\"\<, and \>\"", ",", 
+                    RowBox[{"Cell", "[", 
+                    RowBox[{
+                    RowBox[{"BoxData", "[", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"<|", 
+                    RowBox[{
+                    RowBox[{"\"\<boxes\>\"", "->", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<f\>\"", ",", "\"\<TI\>\""}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}]}], ",", 
+                    RowBox[{"\"\<errors\>\"", "->", 
+                    RowBox[{"{", "}"}]}], ",", 
+                    RowBox[{"\"\<input\>\"", "->", "\"\<f\>\""}], ",", 
+                    RowBox[{"\"\<state\>\"", "->", "\"\<Boxes\>\""}]}], 
+                    "|>"}], ",", "\"\<TeXAssistantTemplate\>\""}], "]"}], ",",
+                     "TraditionalForm"}], "]"}], "]"}], ",", 
+                    RowBox[{
+                    "ExpressionUUID", "->", 
+                    "\"\<cedb233e-ab4c-4c85-997e-2efb73bb125d\>\""}]}], "]"}],
+                     ",", "\"\< is from the set of predefined functions \
+from\>\"", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\< Tasks 1\>\"", ",", 
+                    RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], 
+                    ",", "\"\< and \>\"", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<2\>\"", ",", 
+                    RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], 
+                    ",", "\"\<. \\nThe ratio in which \[AliasDelimiter]each \
+point of a segment divides the segment \>\"", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<must be the same for all \>\"", ",", 
+                    RowBox[{"FontSlant", "->", "\"\<Italic\>\""}]}], "]"}], 
+                    ",", 
+                    RowBox[{"Cell", "[", 
+                    RowBox[{
+                    RowBox[{"BoxData", "[", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"<|", 
+                    RowBox[{
+                    RowBox[{"\"\<boxes\>\"", "->", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<z\>\"", ",", "\"\<TI\>\""}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}]}], ",", 
+                    RowBox[{"\"\<errors\>\"", "->", 
+                    RowBox[{"{", "}"}]}], ",", 
+                    RowBox[{"\"\<input\>\"", "->", "\"\<z\>\""}], ",", 
+                    RowBox[{"\"\<state\>\"", "->", "\"\<Boxes\>\""}]}], 
+                    "|>"}], ",", "\"\<TeXAssistantTemplate\>\""}], "]"}], ",",
+                     "TraditionalForm"}], "]"}], "]"}], ",", 
+                    RowBox[{"FontWeight", "->", "\"\<Plain\>\""}], ",", 
+                    RowBox[{"FontSlant", "->", "\"\<Italic\>\""}], ",", 
+                    RowBox[{
+                    "ExpressionUUID", "->", 
+                    "\"\<34959900-819f-4e77-a018-1cf0c2c9e044\>\""}]}], "]"}],
+                     ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<-s\>\"", ",", 
+                    RowBox[{"FontSlant", "->", "\"\<Italic\>\""}]}], "]"}], 
+                    ",", "\"\< and must be able to change via slider as in \>\
+\"", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<Task 2\>\"", ",", 
+                    RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], 
+                    ",", "\"\<. \\nFor example, suppose the leftmost position \
+of the slider corresponds to the circle \>\"", ",", 
+                    RowBox[{"Cell", "[", 
+                    RowBox[{
+                    RowBox[{"BoxData", "[", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"<|", 
+                    RowBox[{
+                    RowBox[{"\"\<boxes\>\"", "->", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\"\<|\>\"", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<z\>\"", ",", "\"\<TI\>\""}], "]"}], ",", 
+                    "\"\<|\>\"", ",", "\"\<\[LongEqual]\>\"", ",", 
+                    "\"\<2\>\""}], "}"}], "]"}], ",", "TraditionalForm"}], 
+                    "]"}]}], ",", 
+                    RowBox[{"\"\<errors\>\"", "->", 
+                    RowBox[{"{", "}"}]}], ",", 
+                    RowBox[{"\"\<input\>\"", "->", "\"\<|z|=2\>\""}], ",", 
+                    RowBox[{"\"\<state\>\"", "->", "\"\<Boxes\>\""}]}], 
+                    "|>"}], ",", "\"\<TeXAssistantTemplate\>\""}], "]"}], ",",
+                     "TraditionalForm"}], "]"}], "]"}], ",", 
+                    RowBox[{
+                    "ExpressionUUID", "->", 
+                    "\"\<bd27549e-9370-4c4f-adaa-2817df52d917\>\""}]}], "]"}],
+                     ",", "\"\< and \>\"", ",", 
+                    RowBox[{"Cell", "[", 
+                    RowBox[{
+                    RowBox[{"BoxData", "[", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"<|", 
+                    RowBox[{
+                    RowBox[{"\"\<boxes\>\"", "->", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<f\>\"", ",", "\"\<TI\>\""}], "]"}], ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\"\<(\>\"", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<z\>\"", ",", "\"\<TI\>\""}], "]"}], ",", 
+                    "\"\<)\>\""}], "}"}], "]"}], ",", "\"\<\[LongEqual]\>\"", 
+                    ",", 
+                    RowBox[{"SuperscriptBox", "[", 
+                    RowBox[{
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<z\>\"", ",", "\"\<TI\>\""}], "]"}], ",", 
+                    "\"\<2\>\""}], "]"}]}], "}"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}]}], ",", 
+                    RowBox[{"\"\<errors\>\"", "->", 
+                    RowBox[{"{", "}"}]}], ",", 
+                    RowBox[{"\"\<input\>\"", "->", "\"\<f(z) = z^2\>\""}], 
+                    ",", 
+                    RowBox[{"\"\<state\>\"", "->", "\"\<Boxes\>\""}]}], 
+                    "|>"}], ",", "\"\<TeXAssistantTemplate\>\""}], "]"}], ",",
+                     "TraditionalForm"}], "]"}], "]"}], ",", 
+                    RowBox[{
+                    "ExpressionUUID", "->", 
+                    "\"\<3f71be18-2921-4a26-a2ed-e571c8e846d2\>\""}]}], "]"}],
+                     ",", "\"\<. In that case, the rightmost position of the \
+slider should correspond to the circle \>\"", ",", 
+                    RowBox[{"Cell", "[", 
+                    RowBox[{
+                    RowBox[{"BoxData", "[", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"<|", 
+                    RowBox[{
+                    RowBox[{"\"\<boxes\>\"", "->", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\"\<|\>\"", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<z\>\"", ",", "\"\<TI\>\""}], "]"}], ",", 
+                    "\"\<|\>\"", ",", "\"\<\[LongEqual]\>\"", ",", 
+                    "\"\<4\>\""}], "}"}], "]"}], ",", "TraditionalForm"}], 
+                    "]"}]}], ",", 
+                    RowBox[{"\"\<errors\>\"", "->", 
+                    RowBox[{"{", "}"}]}], ",", 
+                    RowBox[{"\"\<input\>\"", "->", "\"\<|z|=4\>\""}], ",", 
+                    RowBox[{"\"\<state\>\"", "->", "\"\<Boxes\>\""}]}], 
+                    "|>"}], ",", "\"\<TeXAssistantTemplate\>\""}], "]"}], ",",
+                     "TraditionalForm"}], "]"}], "]"}], ",", 
+                    RowBox[{
+                    "ExpressionUUID", "->", 
+                    "\"\<dc7f3b69-2732-4f42-9c91-30e0592e97cb\>\""}]}], "]"}],
+                     ",", "\"\<.\\n\\nYou will also keep all Control elements \
+for functions and curves, ranges, etc. that you introduced in the previous \
+tasks to improve the user experience. Make sure to add control elements that \
+allow the user to hide certain lines, change curves\[CloseCurlyQuote] \
+parameters, or change the range of the plot. \\n\\nBy combining the features \
+from \>\"", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<Lab 2 \>\"", ",", 
+                    RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], 
+                    ",", "\"\<and \>\"", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\"\<Lab 3\>\"", ",", 
+                    RowBox[{"FontWeight", "->", "\"\<Bold\>\""}]}], "]"}], 
+                    ",", "\"\<, you will create a comprehensive and \
+interactive complex plane that can be used to explore and visualize \
+mathematical functions and curves.\>\""}], "}"}], "]"}], ",", "\"\<Text\>\"", 
+                  ",", 
+                  RowBox[{"CellChangeTimes", "->", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.85998137152523*^9", ",", "3.8599813724403257`*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.8599814806349897`*^9", ",", "3.85998152592642*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.859981572117475*^9", ",", "3.8599816068648*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.859981649112433*^9", ",", "3.859981694515799*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.859981726126787*^9", ",", "3.859981775959806*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.8599819512583427`*^9", ",", "3.8599821366635303`*^9"}],
+                     "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.859982245756521*^9", ",", "3.8599823262397823`*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.859982388405963*^9", ",", "3.859982438231366*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.85998251967059*^9", ",", "3.859982537016753*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.8599830410276337`*^9", ",", "3.859983043932384*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.859983394710243*^9", ",", "3.8599834063913813`*^9"}], 
+                    "}"}], ",", "3.8895629217592993`*^9", ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.889562966928897*^9", ",", "3.8895630189046783`*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.8895631174592037`*^9", ",", "3.889563118175562*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.889563179297862*^9", ",", "3.889563195182012*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.889563342462179*^9", ",", "3.889563484458946*^9"}], 
+                    "}"}], ",", "3.889563670563024*^9", ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.889563718415888*^9", ",", "3.8895637590225487`*^9"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.889563815946316*^9", ",", "3.889563845161973*^9"}], 
+                    "}"}]}], "}"}]}], ",", 
+                  RowBox[{
+                  "ExpressionUUID", "->", 
+                   "\"\<36fc9332-0af9-4920-96f9-50ce7d7b5118\>\""}]}], 
+                 "]"}]}], "}"}], ",", "Open"}], "]"}], "]"}]}], "}"}], ",", 
+         "Open"}], "]"}], "]"}], "}"}], ",", 
+     RowBox[{"WindowSize", "->", 
+      RowBox[{"{", 
+       RowBox[{"808", ",", "747"}], "}"}]}], ",", 
+     RowBox[{"WindowMargins", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"316", ",", "Automatic"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"Automatic", ",", "50"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"PrintingCopies", "->", "1"}], ",", 
+     RowBox[{"PrintingPageRange", "->", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "Automatic"}], "}"}]}], ",", 
+     RowBox[{
+     "FrontEndVersion", "->", 
+      "\"\<13.0 for Mac OS X ARM (64-bit) (February 4, 2022)\>\""}], ",", 
+     RowBox[{"StyleDefinitions", "->", "\"\<Default.nb\>\""}], ",", 
+     RowBox[{
+     "ExpressionUUID", "->", 
+      "\"\<fe4b5717-a2a3-468a-891a-f43b0a00d14b\>\""}]}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"End", " ", "of", " ", "Notebook", " ", "Content"}], "*)"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Internal", " ", "cache", " ", "information"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"CellTagsOutline", " ", "CellTagsIndex"}], "->", 
+     RowBox[{"{", "}"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"CellTagsIndex", " ", "CellTagsIndex"}], "->", 
+     RowBox[{"{", "}"}]}], "*)"}], "\n", 
+   RowBox[{"(*", 
+    RowBox[{"NotebookFileOutline", " ", 
+     RowBox[{"Notebook", "[", 
+      RowBox[{"{", 
+       RowBox[{"Cell", "[", 
+        RowBox[{"CellGroupData", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Cell", "[", 
+             RowBox[{
+             "580", ",", "22", ",", "246", ",", "4", ",", "98", ",", 
+              "\"\<Title\>\"", ",", 
+              RowBox[{
+              "ExpressionUUID", "->", 
+               "\"\<95d85031-3470-4dfe-a01d-5d91ecfd3695\>\""}]}], "]"}], ",", 
+            RowBox[{"Cell", "[", 
+             RowBox[{
+             "829", ",", "28", ",", "1928", ",", "44", ",", "338", ",", 
+              "\"\<Abstract\>\"", ",", 
+              RowBox[{
+              "ExpressionUUID", "->", 
+               "\"\<616b0eb7-30ae-442f-9ffe-c2d722e5620d\>\""}]}], "]"}], ",", 
+            RowBox[{"Cell", "[", 
+             RowBox[{"CellGroupData", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Cell", "[", 
+                  RowBox[{
+                  "2782", ",", "76", ",", "417", ",", "6", ",", "69", ",", 
+                   "\"\<Chapter\>\"", ",", 
+                   RowBox[{
+                   "ExpressionUUID", "->", 
+                    "\"\<e8693646-eb24-4220-ade7-e18f24be094f\>\""}]}], "]"}],
+                  ",", 
+                 RowBox[{"Cell", "[", 
+                  RowBox[{
+                  "3202", ",", "84", ",", "4558", ",", "109", ",", "317", 
+                   ",", "\"\<Text\>\"", ",", 
+                   RowBox[{
+                   "ExpressionUUID", "->", 
+                    "\"\<36fc9332-0af9-4920-96f9-50ce7d7b5118\>\""}]}], 
+                  "]"}]}], "}"}], ",", "Open"}], "]"}], "]"}]}], "}"}], ",", 
+          "Open"}], "]"}], "]"}], "}"}], "]"}]}], "*)"}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.891732740536452*^9, 3.891732740536452*^9}},
+ CellLabel->
+  "In[174]:=",ExpressionUUID->"dcb5e967-0858-4655-8d4d-11f250c7c894"],
+
+Cell[BoxData[
+ RowBox[{"Notebook", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"Cell", "[", 
+     RowBox[{"CellGroupData", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cell", "[", 
+          RowBox[{"\<\"Lab 4\"\>", ",", "\<\"Title\"\>", ",", 
+           RowBox[{"CellChangeTimes", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"3.859966401820181`*^9", ",", "3.85996640353069`*^9"}],
+                "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+               "3.859966444433812`*^9", ",", "3.859966447378789`*^9"}], "}"}],
+               ",", 
+              RowBox[{"{", 
+               RowBox[{
+               "3.8852673621916533`*^9", ",", "3.8852673622871227`*^9"}], 
+               "}"}]}], "}"}]}], ",", 
+           RowBox[{
+           "ExpressionUUID", 
+            "\[Rule]", "\<\"95d85031-3470-4dfe-a01d-5d91ecfd3695\"\>"}]}], 
+          "]"}], ",", 
+         RowBox[{"Cell", "[", 
+          RowBox[{
+           RowBox[{"TextData", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"StyleBox", "[", 
+               RowBox[{"\<\"Dates\\n\"\>", ",", 
+                RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], "]"}], 
+              ",", "\<\"4 Apr 2023 \[RightArrow] 18 Apr 2023\"\>", ",", 
+              RowBox[{"StyleBox", "[", 
+               RowBox[{"\<\"\\nRules\"\>", ",", 
+                RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], "]"}], 
+              ",", "\<\"\\n1. The following tasks contain a description of \
+objects that you need to implement.\\n2. It is strongly recommended to use \
+Wolfram Mathematica to complete the lab, even if your team is more familiar \
+with another system. The reason for this recommendation is that the tasks are \
+made to be \"\>", ",", 
+              RowBox[{"StyleBox", "[", 
+               RowBox[{"\<\"easy \"\>", ",", 
+                RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], "]"}], 
+              ",", "\<\"to complete \"\>", ",", 
+              RowBox[{"StyleBox", "[", 
+               RowBox[{"\<\"using WM\"\>", ",", 
+                RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], "]"}], 
+              ",", "\<\" and to show how WM can be used to \"\>", ",", 
+              RowBox[{"StyleBox", "[", 
+               RowBox[{"\<\"visualize\"\>", ",", 
+                RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], "]"}], 
+              ",", "\<\" concepts you learn in the Complex Analysis course. \
+You are still free to use other software systems to complete the lab, \
+provided your implementation meets all the conditions described in the tasks \
+below. Any details which are not covered in the task text are up to you.\\n3. \
+To ask questions about the lab and to send \"\>", ",", 
+              RowBox[{"StyleBox", "[", 
+               RowBox[{"\<\"the link to your solutions\"\>", ",", 
+                RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], "]"}], 
+              ",", "\<\", use\"\>", ",", 
+              RowBox[{"ButtonBox", "[", 
+               RowBox[{"\<\" the Lab4 \\\"problem\\\" on nsuhw.ru\"\>", ",", 
+                RowBox[{"BaseStyle", "\[Rule]", "\<\"Hyperlink\"\>"}], ",", 
+                RowBox[{"ButtonData", "\[Rule]", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"URL", "[", 
+                    TemplateBox[{"\"https://nsuhw.ru/ca/task/3983/\""},
+                    "URLArgument"], "]"}], ",", "None"}], "}"}]}], ",", 
+                RowBox[{
+                "ButtonNote", 
+                 "\[Rule]", "\<\"https://nsuhw.ru/ca/task/3983/\"\>"}]}], 
+               "]"}], ",", "\<\". Please, keep in mind that you won\
+\[CloseCurlyQuote]t be allowed to send a message after the last deadline \
+\"\>", ",", 
+              RowBox[{"StyleBox", "[", 
+               RowBox[{"\<\"30 Apr 2023\"\>", ",", 
+                RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], "]"}], 
+              ",", "\<\".\"\>"}], "}"}], "]"}], ",", "\<\"Abstract\"\>", ",", 
+           RowBox[{"CellChangeTimes", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+               "3.859966677666006`*^9", ",", "3.859966678167807`*^9"}], "}"}],
+               ",", 
+              RowBox[{"{", 
+               RowBox[{
+               "3.859966709998013`*^9", ",", "3.8599667178780813`*^9"}], 
+               "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+               "3.8599705181552134`*^9", ",", "3.859970526592711`*^9"}], 
+               "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+               "3.8599790160489073`*^9", ",", "3.85997901669663`*^9"}], "}"}],
+               ",", 
+              RowBox[{"{", 
+               RowBox[{"3.8600423833639`*^9", ",", "3.860042384318589`*^9"}], 
+               "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+               "3.885266619834732`*^9", ",", "3.8852666578465014`*^9"}], 
+               "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+               "3.885267618835787`*^9", ",", "3.885267624588007`*^9"}], "}"}],
+               ",", 
+              RowBox[{"{", 
+               RowBox[{
+               "3.889562827775284`*^9", ",", "3.8895628505491533`*^9"}], 
+               "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+               "3.889564005045671`*^9", ",", "3.889564047360155`*^9"}], 
+               "}"}]}], "}"}]}], ",", 
+           RowBox[{
+           "ExpressionUUID", 
+            "\[Rule]", "\<\"616b0eb7-30ae-442f-9ffe-c2d722e5620d\"\>"}]}], 
+          "]"}], ",", 
+         RowBox[{"Cell", "[", 
+          RowBox[{"CellGroupData", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Cell", "[", 
+               
+               RowBox[{"\<\"Combination of Lab2 and Lab3\"\>", 
+                ",", "\<\"Chapter\"\>", ",", 
+                RowBox[{"CellChangeTimes", "\[Rule]", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.859981327665786`*^9", ",", "3.859981364921829`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.8599816189504747`*^9", ",", "3.859981621811307`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.859982610791754`*^9", ",", "3.8599826124725122`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.885267382306584`*^9", ",", "3.88526738895333`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.885267552648775`*^9", ",", "3.885267580827383`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.8895628948831367`*^9", ",", "3.889562910532583`*^9"}], 
+                    "}"}]}], "}"}]}], ",", 
+                RowBox[{
+                "ExpressionUUID", 
+                 "\[Rule]", \
+"\<\"e8693646-eb24-4220-ade7-e18f24be094f\"\>"}]}], "]"}], ",", 
+              RowBox[{"Cell", "[", 
+               RowBox[{
+                RowBox[{"TextData", "[", 
+                 RowBox[{"{", 
+                  
+                  RowBox[{"\<\"In this lab, you will create a complex plane \
+that includes all the points of segments \"\>", ",", 
+                   RowBox[{"Cell", "[", 
+                    RowBox[{
+                    RowBox[{"BoxData", "[", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\<\"boxes\"\>", "\[Rule]", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"[\"\>", ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"z\"\>", ",", "\<\"TI\"\>"}], "]"}], 
+                    ",", "\<\",\"\>", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"f\"\>", ",", "\<\"TI\"\>"}], "]"}], ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"(\"\>", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"z\"\>", ",", "\<\"TI\"\>"}], "]"}], 
+                    ",", "\<\")\"\>"}], "}"}], "]"}]}], "}"}], "]"}], 
+                    ",", "\<\"]\"\>"}], "}"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}]}], ",", 
+                    RowBox[{"\<\"errors\"\>", "\[Rule]", 
+                    RowBox[{"{", "}"}]}], ",", 
+                    RowBox[{"\<\"input\"\>", "\[Rule]", "\<\"[z,f(z)]\"\>"}], 
+                    ",", 
+                    RowBox[{"\<\"state\"\>", "\[Rule]", "\<\"Boxes\"\>"}]}], 
+                    "\[RightAssociation]"}], 
+                    ",", "\<\"TeXAssistantTemplate\"\>"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}], "]"}], ",", 
+                    RowBox[{
+                    "ExpressionUUID", 
+                    "\[Rule]", \
+"\<\"c487d3e8-95fe-4995-9fb3-c950d2923ebc\"\>"}]}], "]"}], 
+                   ",", "\<\", where z runs through all lines from \"\>", ",", 
+                   RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"Task 3\"\>", ",", 
+                    RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], 
+                    "]"}], ",", "\<\", and \"\>", ",", 
+                   RowBox[{"Cell", "[", 
+                    RowBox[{
+                    RowBox[{"BoxData", "[", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\<\"boxes\"\>", "\[Rule]", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"f\"\>", ",", "\<\"TI\"\>"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}]}], ",", 
+                    RowBox[{"\<\"errors\"\>", "\[Rule]", 
+                    RowBox[{"{", "}"}]}], ",", 
+                    RowBox[{"\<\"input\"\>", "\[Rule]", "\<\"f\"\>"}], ",", 
+                    RowBox[{"\<\"state\"\>", "\[Rule]", "\<\"Boxes\"\>"}]}], 
+                    "\[RightAssociation]"}], 
+                    ",", "\<\"TeXAssistantTemplate\"\>"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}], "]"}], ",", 
+                    RowBox[{
+                    "ExpressionUUID", 
+                    "\[Rule]", \
+"\<\"cedb233e-ab4c-4c85-997e-2efb73bb125d\"\>"}]}], "]"}], 
+                   ",", "\<\" is from the set of predefined functions \
+from\"\>", ",", 
+                   RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\" Tasks 1\"\>", ",", 
+                    RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], 
+                    "]"}], ",", "\<\" and \"\>", ",", 
+                   RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"2\"\>", ",", 
+                    RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], 
+                    "]"}], ",", "\<\". \\nThe ratio in which \
+\[AliasDelimiter]each point of a segment divides the segment \"\>", ",", 
+                   RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"must be the same for all \"\>", ",", 
+                    RowBox[{"FontSlant", "\[Rule]", "\<\"Italic\"\>"}]}], 
+                    "]"}], ",", 
+                   RowBox[{"Cell", "[", 
+                    RowBox[{
+                    RowBox[{"BoxData", "[", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\<\"boxes\"\>", "\[Rule]", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"z\"\>", ",", "\<\"TI\"\>"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}]}], ",", 
+                    RowBox[{"\<\"errors\"\>", "\[Rule]", 
+                    RowBox[{"{", "}"}]}], ",", 
+                    RowBox[{"\<\"input\"\>", "\[Rule]", "\<\"z\"\>"}], ",", 
+                    RowBox[{"\<\"state\"\>", "\[Rule]", "\<\"Boxes\"\>"}]}], 
+                    "\[RightAssociation]"}], 
+                    ",", "\<\"TeXAssistantTemplate\"\>"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}], "]"}], ",", 
+                    RowBox[{"FontWeight", "\[Rule]", "\<\"Plain\"\>"}], ",", 
+                    RowBox[{"FontSlant", "\[Rule]", "\<\"Italic\"\>"}], ",", 
+                    RowBox[{
+                    "ExpressionUUID", 
+                    "\[Rule]", \
+"\<\"34959900-819f-4e77-a018-1cf0c2c9e044\"\>"}]}], "]"}], ",", 
+                   RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"-s\"\>", ",", 
+                    RowBox[{"FontSlant", "\[Rule]", "\<\"Italic\"\>"}]}], 
+                    "]"}], ",", "\<\" and must be able to change via slider \
+as in \"\>", ",", 
+                   RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"Task 2\"\>", ",", 
+                    RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], 
+                    "]"}], ",", "\<\". \\nFor example, suppose the leftmost \
+position of the slider corresponds to the circle \"\>", ",", 
+                   RowBox[{"Cell", "[", 
+                    RowBox[{
+                    RowBox[{"BoxData", "[", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\<\"boxes\"\>", "\[Rule]", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"|\"\>", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"z\"\>", ",", "\<\"TI\"\>"}], "]"}], 
+                    ",", "\<\"|\"\>", ",", "\<\"\[LongEqual]\"\>", 
+                    ",", "\<\"2\"\>"}], "}"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}]}], ",", 
+                    RowBox[{"\<\"errors\"\>", "\[Rule]", 
+                    RowBox[{"{", "}"}]}], ",", 
+                    RowBox[{"\<\"input\"\>", "\[Rule]", "\<\"|z|=2\"\>"}], 
+                    ",", 
+                    RowBox[{"\<\"state\"\>", "\[Rule]", "\<\"Boxes\"\>"}]}], 
+                    "\[RightAssociation]"}], 
+                    ",", "\<\"TeXAssistantTemplate\"\>"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}], "]"}], ",", 
+                    RowBox[{
+                    "ExpressionUUID", 
+                    "\[Rule]", \
+"\<\"bd27549e-9370-4c4f-adaa-2817df52d917\"\>"}]}], "]"}], 
+                   ",", "\<\" and \"\>", ",", 
+                   RowBox[{"Cell", "[", 
+                    RowBox[{
+                    RowBox[{"BoxData", "[", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\<\"boxes\"\>", "\[Rule]", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"f\"\>", ",", "\<\"TI\"\>"}], "]"}], ",", 
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"(\"\>", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"z\"\>", ",", "\<\"TI\"\>"}], "]"}], 
+                    ",", "\<\")\"\>"}], "}"}], "]"}], 
+                    ",", "\<\"\[LongEqual]\"\>", ",", 
+                    RowBox[{"SuperscriptBox", "[", 
+                    RowBox[{
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"z\"\>", ",", "\<\"TI\"\>"}], "]"}], 
+                    ",", "\<\"2\"\>"}], "]"}]}], "}"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}]}], ",", 
+                    RowBox[{"\<\"errors\"\>", "\[Rule]", 
+                    RowBox[{"{", "}"}]}], ",", 
+                    
+                    RowBox[{"\<\"input\"\>", 
+                    "\[Rule]", "\<\"f(z) = z^2\"\>"}], ",", 
+                    RowBox[{"\<\"state\"\>", "\[Rule]", "\<\"Boxes\"\>"}]}], 
+                    "\[RightAssociation]"}], 
+                    ",", "\<\"TeXAssistantTemplate\"\>"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}], "]"}], ",", 
+                    RowBox[{
+                    "ExpressionUUID", 
+                    "\[Rule]", \
+"\<\"3f71be18-2921-4a26-a2ed-e571c8e846d2\"\>"}]}], "]"}], 
+                   ",", "\<\". In that case, the rightmost position of the \
+slider should correspond to the circle \"\>", ",", 
+                   RowBox[{"Cell", "[", 
+                    RowBox[{
+                    RowBox[{"BoxData", "[", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"TemplateBox", "[", 
+                    RowBox[{
+                    RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\<\"boxes\"\>", "\[Rule]", 
+                    RowBox[{"FormBox", "[", 
+                    RowBox[{
+                    RowBox[{"RowBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"|\"\>", ",", 
+                    RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"z\"\>", ",", "\<\"TI\"\>"}], "]"}], 
+                    ",", "\<\"|\"\>", ",", "\<\"\[LongEqual]\"\>", 
+                    ",", "\<\"4\"\>"}], "}"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}]}], ",", 
+                    RowBox[{"\<\"errors\"\>", "\[Rule]", 
+                    RowBox[{"{", "}"}]}], ",", 
+                    RowBox[{"\<\"input\"\>", "\[Rule]", "\<\"|z|=4\"\>"}], 
+                    ",", 
+                    RowBox[{"\<\"state\"\>", "\[Rule]", "\<\"Boxes\"\>"}]}], 
+                    "\[RightAssociation]"}], 
+                    ",", "\<\"TeXAssistantTemplate\"\>"}], "]"}], ",", 
+                    "TraditionalForm"}], "]"}], "]"}], ",", 
+                    RowBox[{
+                    "ExpressionUUID", 
+                    "\[Rule]", \
+"\<\"dc7f3b69-2732-4f42-9c91-30e0592e97cb\"\>"}]}], "]"}], 
+                   ",", "\<\".\\n\\nYou will also keep all Control elements \
+for functions and curves, ranges, etc. that you introduced in the previous \
+tasks to improve the user experience. Make sure to add control elements that \
+allow the user to hide certain lines, change curves\[CloseCurlyQuote] \
+parameters, or change the range of the plot. \\n\\nBy combining the features \
+from \"\>", ",", 
+                   RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"Lab 2 \"\>", ",", 
+                    RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], 
+                    "]"}], ",", "\<\"and \"\>", ",", 
+                   RowBox[{"StyleBox", "[", 
+                    RowBox[{"\<\"Lab 3\"\>", ",", 
+                    RowBox[{"FontWeight", "\[Rule]", "\<\"Bold\"\>"}]}], 
+                    "]"}], ",", "\<\", you will create a comprehensive and \
+interactive complex plane that can be used to explore and visualize \
+mathematical functions and curves.\"\>"}], "}"}], "]"}], ",", "\<\"Text\"\>", 
+                ",", 
+                RowBox[{"CellChangeTimes", "\[Rule]", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.85998137152523`*^9", ",", "3.8599813724403257`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.8599814806349897`*^9", ",", "3.85998152592642`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.859981572117475`*^9", ",", "3.8599816068648`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.859981649112433`*^9", ",", "3.859981694515799`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.859981726126787`*^9", ",", "3.859981775959806`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.8599819512583427`*^9", ",", "3.8599821366635303`*^9"}],
+                     "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.859982245756521`*^9", ",", "3.8599823262397823`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.859982388405963`*^9", ",", "3.859982438231366`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.85998251967059`*^9", ",", "3.859982537016753`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.8599830410276337`*^9", ",", "3.859983043932384`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.859983394710243`*^9", ",", "3.8599834063913813`*^9"}], 
+                    "}"}], ",", "3.8895629217592993`*^9", ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.889562966928897`*^9", ",", "3.8895630189046783`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.8895631174592037`*^9", ",", "3.889563118175562`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.889563179297862`*^9", ",", "3.889563195182012`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.889563342462179`*^9", ",", "3.889563484458946`*^9"}], 
+                    "}"}], ",", "3.889563670563024`*^9", ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.889563718415888`*^9", ",", "3.8895637590225487`*^9"}], 
+                    "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "3.889563815946316`*^9", ",", "3.889563845161973`*^9"}], 
+                    "}"}]}], "}"}]}], ",", 
+                RowBox[{
+                "ExpressionUUID", 
+                 "\[Rule]", \
+"\<\"36fc9332-0af9-4920-96f9-50ce7d7b5118\"\>"}]}], "]"}]}], "}"}], ",", 
+            "Open"}], "]"}], "]"}]}], "}"}], ",", "Open"}], "]"}], "]"}], 
+    "}"}], ",", 
+   RowBox[{"WindowSize", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"808", ",", "747"}], "}"}]}], ",", 
+   RowBox[{"WindowMargins", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"316", ",", "Automatic"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"Automatic", ",", "50"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"PrintingCopies", "\[Rule]", "1"}], ",", 
+   RowBox[{"PrintingPageRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "Automatic"}], "}"}]}], ",", 
+   RowBox[{
+   "FrontEndVersion", 
+    "\[Rule]", "\<\"13.0 for Mac OS X ARM (64-bit) (February 4, 2022)\"\>"}], 
+   ",", 
+   RowBox[{"StyleDefinitions", "\[Rule]", "\<\"Default.nb\"\>"}], ",", 
+   RowBox[{
+   "ExpressionUUID", 
+    "\[Rule]", "\<\"fe4b5717-a2a3-468a-891a-f43b0a00d14b\"\>"}]}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.8917327414586143`*^9},
+ CellLabel->
+  "Out[174]=",ExpressionUUID->"38170a97-1641-46da-8bfb-ea4bbe2d5d88"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"x", " ", 
+    RowBox[{"Cos", "[", "x", "]"}]}], ",", 
+   RowBox[{"x", " ", 
+    RowBox[{"Sin", "[", "x", "]"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.891732797253851*^9, 3.8917328526318226`*^9, 
+  3.89173304185526*^9, 3.891733079584084*^9},
+ CellLabel->
+  "Out[225]=",ExpressionUUID->"71d45694-6ce6-4f10-8951-c96340864db8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Define", " ", "functions"}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"hyperbolicSine", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Re", "[", 
+      RowBox[{"Sinh", "[", 
+       RowBox[{"x", "+", 
+        RowBox[{"I", "*", "y"}]}], "]"}], "]"}], ",", 
+     RowBox[{"Im", "[", 
+      RowBox[{"Sinh", "[", 
+       RowBox[{"x", "+", 
+        RowBox[{"I", "*", "y"}]}], "]"}], "]"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"complexSine", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Re", "[", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"x", "+", 
+        RowBox[{"I", "*", "y"}]}], "]"}], "]"}], ",", 
+     RowBox[{"Im", "[", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"x", "+", 
+        RowBox[{"I", "*", "y"}]}], "]"}], "]"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"hyperbolicCosine", "[", 
+     RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Re", "[", 
+       RowBox[{"Cosh", "[", 
+        RowBox[{"x", "+", 
+         RowBox[{"I", "*", "y"}]}], "]"}], "]"}], ",", 
+      RowBox[{"Im", "[", 
+       RowBox[{"Cosh", "[", 
+        RowBox[{"x", "+", 
+         RowBox[{"I", "*", "y"}]}], "]"}], "]"}]}], "}"}]}], ";"}], 
+  "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"crcl1", "[", "x_", "]"}], ":=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"0.5", " ", 
+      RowBox[{"Cos", "[", "x", "]"}]}], ",", 
+     RowBox[{"0.5", " ", 
+      RowBox[{"Sin", "[", "x", "]"}]}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"crcl2", "[", "x_", "]"}], ":=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Cos", "[", "x", "]"}], ",", 
+     RowBox[{"Sin", "[", "x", "]"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"crcl3", "[", "x_", "]"}], ":=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"2", " ", 
+      RowBox[{"Cos", "[", "x", "]"}]}], ",", 
+     RowBox[{"2", " ", 
+      RowBox[{"Sin", "[", "x", "]"}]}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"v1", "[", "x_", "]"}], ":=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     RowBox[{"x", "-", "Pi"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"v2", "[", "x_", "]"}], ":=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "1"}], ",", 
+     RowBox[{"x", "-", "Pi"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"h1", "[", "x_", "]"}], ":=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "-", "Pi"}], ",", "1"}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"h2", "[", "x_", "]"}], ":=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "-", "Pi"}], ",", 
+     RowBox[{"-", "1"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"inf", "[", "x_", "]"}], ":=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Sin", "[", "x", "]"}], ",", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"2", " ", "x"}], "]"}]}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"sp", "[", "x_", "]"}], ":=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"x", "*", 
+       RowBox[{"Cos", "[", "x", "]"}]}], ",", 
+      RowBox[{"x", "*", 
+       RowBox[{"Sin", "[", "x", "]"}]}]}], "}"}]}], ";"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Define", " ", "background"}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"background", "=", 
+    RowBox[{"Graphics", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"GrayLevel", "[", "0.9", "]"}], ",", 
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"i", ",", 
+               RowBox[{"-", "5"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"i", ",", "5"}], "}"}]}], "}"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"i", ",", 
+            RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}], ",", 
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "5"}], ",", "i"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"5", ",", "i"}], "}"}]}], "}"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"i", ",", 
+            RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}], "}"}], ",", 
+      RowBox[{"PlotRange", "->", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "}"}]}], ",", 
+      RowBox[{"AspectRatio", "->", "1"}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Create", " ", "Manipulate"}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"Show", "[", 
+     RowBox[{"background", ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"ParametricPlot", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"curve", "[", "t", "]"}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"f", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"curve", "[", "t", "]"}], "[", 
+                 RowBox[{"[", "1", "]"}], "]"}], ",", 
+                RowBox[{
+                 RowBox[{"curve", "[", "t", "]"}], "[", 
+                 RowBox[{"[", "2", "]"}], "]"}]}], "]"}], "-", 
+              RowBox[{"curve", "[", "t", "]"}]}], ")"}], "*", "rat"}]}], 
+          "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"t", ",", "0", ",", 
+           RowBox[{"2", " ", "Pi"}]}], "}"}], ",", 
+         RowBox[{"PlotRange", "->", 
+          RowBox[{"Pi", "*", "2"}]}], ",", 
+         RowBox[{"PlotStyle", "->", 
+          RowBox[{"{", 
+           RowBox[{"Thick", ",", "Red"}], "}"}]}], ",", 
+         RowBox[{"ImageSize", "->", "Large"}]}], "]"}], "]"}], ",", 
+      RowBox[{"PlotRange", "->", "All"}], ",", 
+      RowBox[{"ImageSize", "->", "Large"}], ",", 
+      RowBox[{"Frame", "->", "True"}], ",", 
+      RowBox[{"FrameStyle", "->", 
+       RowBox[{"Directive", "[", 
+        RowBox[{"Black", ",", "2"}], "]"}]}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"curve", ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "crcl1", ",", "crcl2", ",", "crcl3", ",", "v1", ",", "v2", ",", "h1", 
+        ",", "h2", ",", "inf", ",", "sp"}], "}"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"f", ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "hyperbolicSine", ",", "complexSine", ",", "hyperbolicCosine"}], 
+       "}"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"rat", ",", "0", ",", "1"}], "}"}], ",", 
+    RowBox[{"ControlPlacement", "->", "Top"}]}], "]"}], 
+  "\n"}], "\n"}], "Input",
+ CellChangeTimes->{{3.8917343011114483`*^9, 3.8917343011114483`*^9}, 
+   3.891734359334293*^9},
+ CellLabel->"In[1]:=",ExpressionUUID->"5ce497f5-f060-4a5e-a02c-7295bca696f2"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`curve$$ = $CellContext`crcl1, \
+$CellContext`f$$ = $CellContext`complexSine, $CellContext`rat$$ = 0.014, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`curve$$], {$CellContext`crcl1, $CellContext`crcl2, \
+$CellContext`crcl3, $CellContext`v1, $CellContext`v2, $CellContext`h1, \
+$CellContext`h2, $CellContext`inf, $CellContext`sp}}, {
+      Hold[$CellContext`f$$], {$CellContext`hyperbolicSine, \
+$CellContext`complexSine, $CellContext`hyperbolicCosine}}, {
+      Hold[$CellContext`rat$$], 0, 1}}, Typeset`size$$ = {
+    518.4, {258., 261.72919921874995`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`curve$$ = $CellContext`crcl1, \
+$CellContext`f$$ = $CellContext`hyperbolicSine, $CellContext`rat$$ = 0}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[$CellContext`background, 
+        Graphics[
+         ParametricPlot[{$CellContext`curve$$[$CellContext`t] + \
+($CellContext`f$$[
+               Part[
+                $CellContext`curve$$[$CellContext`t], 1], 
+               Part[
+                $CellContext`curve$$[$CellContext`t], 
+                2]] - $CellContext`curve$$[$CellContext`t]) \
+$CellContext`rat$$}, {$CellContext`t, 0, 2 Pi}, PlotRange -> Pi 2, 
+          PlotStyle -> {Thick, Red}, ImageSize -> Large]], PlotRange -> All, 
+        ImageSize -> Large, Frame -> True, FrameStyle -> Directive[Black, 2]],
+       "Specifications" :> {{$CellContext`curve$$, {$CellContext`crcl1, \
+$CellContext`crcl2, $CellContext`crcl3, $CellContext`v1, $CellContext`v2, \
+$CellContext`h1, $CellContext`h2, $CellContext`inf, $CellContext`sp}}, \
+{$CellContext`f$$, {$CellContext`hyperbolicSine, $CellContext`complexSine, \
+$CellContext`hyperbolicCosine}}, {$CellContext`rat$$, 0, 1}}, 
+      "Options" :> {ControlPlacement -> Top}, "DefaultOptions" :> {}],
+     ImageSizeCache->{561., {319.9206298828125, 325.0793701171875}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.891734302108719*^9, 3.891734360614787*^9, 
+  3.8917509236066213`*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"2809b077-13ae-4387-97f5-0aa8437e0395"]
+}, Open  ]]
+},
+WindowSize->{1141.2, 573.6},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>0.9 Inherited,
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fd816e28-572f-446b-a94d-5b9352cfc59b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 28228, 612, 2029, "Input",ExpressionUUID->"dcb5e967-0858-4655-8d4d-11f250c7c894"],
+Cell[28811, 636, 24704, 530, 1114, "Output",ExpressionUUID->"38170a97-1641-46da-8bfb-ea4bbe2d5d88"],
+Cell[53518, 1168, 380, 10, 28, "Output",ExpressionUUID->"71d45694-6ce6-4f10-8951-c96340864db8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53935, 1183, 7268, 226, 768, "Input",ExpressionUUID->"5ce497f5-f060-4a5e-a02c-7295bca696f2"],
+Cell[61206, 1411, 3045, 56, 686, "Output",ExpressionUUID->"2809b077-13ae-4387-97f5-0aa8437e0395"]
+}, Open  ]]
+}
+]
+*)
+
